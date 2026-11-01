@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MTVI Apparel - Contact</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+    <header>
+        <h1>MTVI Apparel</h1>
+        <p>Contact Us</p>
+
+        <nav>
+            <a href="index.html">⌂ Home</a> |
+            <a href="about.html">♙ About Us</a> |
+            <a href="products.html">🛍 Products</a> |
+            <a href="enquiry.html">✉ Enquiry</a> |
+            <a href="contact.html">☎ Contact</a>
+        </nav>
+    </header>
+
+    <hr>
+
+    <main>
+        <section>
+            <h2>Contact MTVI Apparel</h2>
+            <p>We would love to hear from you. Visit one of our stores or contact us using the information below.</p>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Our Locations</h2>
+
+            <h3>Pretoria Branch</h3>
+            <p>
+                MTVI Apparel Store<br>
+                123 Church Street<br>
+                Pretoria, Gauteng<br>
+                South Africa
+            </p>
+            <p>Phone: 082 744 1937</p>
+            <div class="location-map">
+                <iframe
+                    src="https://maps.google.com/maps?q=123%20Church%20Street%2C%20Pretoria%2C%20Gauteng%2C%20South%20Africa&output=embed"
+                    title="Map showing the MTVI Apparel Pretoria branch"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+
+            <h3>Thohoyandou Branch</h3>
+            <p>
+                MTVI Apparel Store<br>
+                45 Main Street<br>
+                Thohoyandou, Limpopo<br>
+                South Africa
+            </p>
+            <p>Phone: 075 278 6377</p>
+            <div class="location-map">
+                <iframe
+                    src="https://maps.google.com/maps?q=45%20Main%20Street%2C%20Thohoyandou%2C%20Limpopo%2C%20South%20Africa&output=embed"
+                    title="Map showing the MTVI Apparel Thohoyandou branch"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Send Us a Message</h2>
+
+            <form id="contactForm" novalidate>
+                <label for="contactName">Full Name:</label>
+                <input type="text" id="contactName" name="contactName" placeholder="Enter your name" required>
+
+                <br><br>
+
+                <label for="contactEmail">Email:</label>
+                <input type="email" id="contactEmail" name="contactEmail" placeholder="Enter your email" required>
+
+                <br><br>
+
+                <label for="messageType">Message Type:</label>
+                <select id="messageType" name="messageType">
+                    <option value="General enquiry">General enquiry</option>
+                    <option value="Product enquiry">Product enquiry</option>
+                    <option value="Wholesale enquiry">Wholesale enquiry</option>
+                    <option value="Custom order">Custom order</option>
+                </select>
+
+                <br><br>
+
+                <label for="contactMessage">Message:</label>
+                <textarea id="contactMessage" name="contactMessage" rows="6" cols="40" placeholder="Write your message" required></textarea>
+
+                <br><br>
+
+                <input type="submit" value="Send Message">
+                <button type="button" class="whatsapp-button" data-whatsapp-enquiry>Send Message on WhatsApp</button>
+                <input type="reset" value="Clear">
+                <p id="contactResponse" class="form-response" aria-live="polite"></p>
+            </form>
+        </section>
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>&copy; 2026 MTVI Clothing Brand. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

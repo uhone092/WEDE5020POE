@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MTVI Apparel - Enquiry</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+    <header>
+        <h1>MTVI Apparel</h1>
+        <p>Product Enquiry</p>
+
+        <nav>
+            <a href="index.html">⌂ Home</a> |
+            <a href="about.html">♙ About Us</a> |
+            <a href="products.html">🛍 Products</a> |
+            <a href="enquiry.html">✉ Enquiry</a> |
+            <a href="contact.html">☎ Contact</a>
+        </nav>
+    </header>
+
+    <hr>
+
+    <main>
+        <h2>Make an Enquiry</h2>
+
+        <p>Please complete the form below if you have any questions about our products.</p>
+
+        <form id="enquiryForm" novalidate>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+            <br><br>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <br><br>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+
+            <br><br>
+
+            <label for="product">Product:</label>
+            <select id="product" name="product">
+                <option value="tshirt">MTVI T-Shirt</option>
+                <option value="hoodie">MTVI Hoodie</option>
+                <option value="pants">MTVI Pants</option>
+                <option value="hat">MTVI Hat</option>
+            </select>
+
+            <br><br>
+
+            <label for="message">Your Enquiry:</label>
+            <textarea id="message" name="message" rows="6" cols="40" placeholder="Enter your enquiry here" required></textarea>
+
+            <br><br>
+
+            <input type="submit" value="Submit Enquiry">
+            <input type="reset" value="Clear">
+            <p id="enquiryResponse" class="form-response" aria-live="polite"></p>
+        </form>
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>&copy; 2026 MTVI Clothing Brand. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
